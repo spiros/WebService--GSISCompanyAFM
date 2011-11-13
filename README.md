@@ -1,14 +1,14 @@
 This module provides a simple wrapper around the new web service set up by the Greek
 Information Systems department for validating or obtaining information on a given
 AFM number for companies. You can find more information by reading the online documentation
-at L<http://www.gsis.gr/wsnp.html> which is, for the moment at least, only in Greek.
+at http://www.gsis.gr/wsnp.html which is, for the moment at least, only in Greek.
 
 ```perl
 my $Object = WebService::GSISCompanyAFM->new();
 
 my $afm = '094422282';
     
-my $rv = $Object->is_valid( $afm);     
+my $rv = $Object->is_valid( $afm );     
     
 my $rh_information = $Object->get_info ( $afm );
 ```
